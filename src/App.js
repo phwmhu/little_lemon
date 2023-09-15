@@ -1,14 +1,19 @@
+import React from 'react';
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Routing from "./components/Routing";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routing />
-      <Footer />
-    </>
+    <Router basename="/little_lemon">
+      <>
+        <Navbar />
+        <Routing />
+        <Footer />
+      </>
+    </Router>
   );
 }
 
